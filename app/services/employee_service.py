@@ -13,31 +13,7 @@ class EmployeeService:
         }
 
     def get_employee(self):
-        return {
-            "employees": [
-                        {
-                            "id": 1,
-                            "name": "Mukul",
-                            "department": "Engineering"
-                        },
-                        {
-                            "id": 2,
-                            "name": "Alice",
-                            "department": "HR"
-                        },
-                        {
-                            "id": 3,
-                            "name": "Mohan",
-                            "department": "Finance"
-                        }
-                    ]
-        }
+        return self.repository.get_all_employee()
 
     def get_department(self):
-        return {
-            "departments": [
-                        "Engineering",
-                        "HR",
-                        "Finance"
-                    ]
-        }
+        return self.repository.get_all_department()
