@@ -5,7 +5,7 @@ class EmployeeRepository:
     def save(self, employee):
         return employee
     
-    def get_all_employee(self):
+    def get_all(self):
         return [
             {
                 "id": 1,

@@ -13,7 +13,7 @@ class EmployeeService:
         }
 
     def get_employee(self):
-        return self.repository.get_all_employee()
+        return self.repository.get_all()
 
     def get_department(self):
         return self.repository.get_all_department()
