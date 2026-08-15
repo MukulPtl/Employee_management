@@ -66,3 +66,70 @@ The Employee Management Backend is the central project used throughout the backe
 │   └── Project_Design.md
 ├── requirements.txt
 └── tests
+```
+---
+
+## PostgreSQL Integration Status
+
+### PostgreSQL Setup
+
+- PostgreSQL 18 installed on Windows.
+- PostgreSQL service: `postgresql-x64-18`
+- Database created: `employee_management`
+- PostgreSQL port: `5432`
+- `listen_addresses = *`
+
+### Application Environment
+
+The Employee Management Backend runs inside WSL2.
+
+Current conceptual architecture:
+
+Client
+  ↓ HTTP
+FastAPI
+  ↓
+Routes
+  ↓
+Services
+  ↓
+Repositories
+  ↓
+PostgreSQL
+
+### Current Database Integration
+
+PostgreSQL has been installed and the database has been created, but the application has not yet been integrated with PostgreSQL.
+
+The WSL2 application currently cannot reach the Windows PostgreSQL server on port `5432`.
+
+No firewall or security settings have been changed to resolve this.
+
+The current repository implementation remains the existing in-memory implementation.
+
+### Database Concepts Learned
+
+- PostgreSQL as a DBMS
+- Persistent storage
+- PostgreSQL server vs FastAPI application
+- Database ports
+- pgAdmin vs PostgreSQL server
+- Database connection
+- `psycopg`
+- Connection object
+- Cursor
+- `execute()`
+- `fetchone()`
+
+### Next Step
+
+Continue learning PostgreSQL fundamentals by understanding:
+
+1. Tables
+2. Rows
+3. Columns
+4. Designing the `employees` table
+
+Database integration into the repository will happen after the underlying database concepts are understood.
+
+---

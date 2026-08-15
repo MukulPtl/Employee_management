@@ -48,3 +48,16 @@ Always provide: 1. Update for Lesson_Tracker.md 2. Update for
 Project_Design.md (if needed) 3. Documentation updates (if needed) 4.
 Git reminder: - git status - git add . - meaningful git commit - git
 push (if remote exists)
+
+## Safety / System-Change Rule
+
+Do not make or recommend system, network, firewall, security, OS, or configuration changes that could increase the security or operational risk of the user's machine merely to make a lesson or project work.
+
+If such a change would be required:
+
+1. Explain the risk first.
+2. Prefer a safe alternative learning path.
+3. Do not weaken firewall or security settings merely to solve a development-environment problem.
+4. If no safe alternative exists, stop and explain the trade-off before asking the user to make the change.
+
+The primary objective is learning and understanding, not forcing the development environment to work at any cost.
